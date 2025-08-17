@@ -12,10 +12,9 @@ This repo collects configuration “pieces” you can:
 
 ### Current categories
 
-N/A
+- **Dev Containers** → `devcontainer.json` templates for VS Code / GitHub Codespaces
 
 ### Planned categories
 
-- **Dev Containers** → `devcontainer.json` templates for VS Code / GitHub Codespaces
 - **Renovate** → Dependency update rules and presets
 - **Other Configs** → Editor settings, linting configs, etc.

@@ -1,0 +1,53 @@
+{
+    "name": "Node 24 TS Dev",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:dev-24-bookworm",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/github-cli": {
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "anthropic.claude-code",
+                "christian-kohler.npm-intellisense",
+                "christian-kohler.path-intellisense",
+                "dbaeumer.vscode-eslint",
+                "eamodio.gitlens",
+                "esbenp.prettier-vscode",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "GitHub.vscode-pull-request-github",
+                "github.vscode-github-actions",
+                "jasonnutter.search-node-modules",
+                "mhutchie.git-graph",
+                "streetsidesoftware.code-spell-checker",
+                "vitest.explorer"
+            ],
+            "settings": {
+                "cSpell.words": [
+                    "claude",
+                    "dbaeumer",
+                    "devcontainers",
+                    "eamodio",
+                    "esbenp",
+                    "jasonnutter",
+                    "kohler",
+                    "mhutchie"
+                ],
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.eslint": "explicit"
+                },
+                "eslint.validate": [
+                    "javascript",
+                    "javascriptreact",
+                    "typescript",
+                    "typescriptreact"
+                ],
+                "prettier.useEditorConfig": true
+            }
+        }
+    }
+}
