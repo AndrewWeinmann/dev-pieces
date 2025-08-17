@@ -46,6 +46,9 @@
                     "typescript",
                     "typescriptreact"
                 ],
+                "git.inputValidation": true,
+                "git.inputValidationSubjectLength": 50,
+                "git.inputValidationLength": 72,
                 "prettier.useEditorConfig": true
             }
         }
