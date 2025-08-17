@@ -1,0 +1,35 @@
+{
+    "name": "Dev Pieces",
+    "image": "mcr.microsoft.com/devcontainers/base:noble",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "DavidAnson.vscode-markdownlint",
+                "esbenp.prettier-vscode",
+                "streetsidesoftware.code-spell-checker"
+            ],
+            "settings": {
+                "cSpell.words": [
+                    "Anson",
+                    "claude",
+                    "dbaeumer",
+                    "devcontainers",
+                    "eamodio",
+                    "esbenp",
+                    "jasonnutter",
+                    "kohler",
+                    "mhutchie"
+                ],
+                "editor.formatOnSave": true,
+                "git.inputValidation": true,
+                "git.inputValidationSubjectLength": 50,
+                "git.inputValidationLength": 72,
+                "[markdown]": {
+                    "editor.codeActionsOnSave": {
+                        "markdownlint.fixAll": "always"
+                    }
+                }
+            }
+        }
+    }
+}
