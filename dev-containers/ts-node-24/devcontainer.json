@@ -60,5 +60,5 @@
             }
         }
     },
-    "postCreateCommand": "bash -lc 'git config --global gpg.format ssh && git config --global commit.gpgsign true && git config --global --unset user.signingkey || true && git config --global gpg.ssh.defaultKeyCommand \"ssh-add -L\"'"
+    "postCreateCommand": "bash -lc 'bash ./.devcontainer/post-create.sh'"
 }
