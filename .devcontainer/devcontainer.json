@@ -17,9 +17,11 @@
                     "devcontainers",
                     "eamodio",
                     "esbenp",
+                    "gpgsign",
                     "jasonnutter",
                     "kohler",
-                    "mhutchie"
+                    "mhutchie",
+                    "signingkey"
                 ],
                 "editor.formatOnSave": true,
                 "git.inputValidation": true,
