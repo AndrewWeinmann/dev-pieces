@@ -13,6 +13,7 @@ This repo collects configuration “pieces” you can:
 ### Current categories
 
 - **Dev Containers** → `devcontainer.json` templates for VS Code / GitHub Codespaces
+- **Prompts** → Reusable prompts for AI tools
 
 ### Planned categories
 
