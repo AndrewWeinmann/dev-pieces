@@ -6,7 +6,9 @@
         "ghcr.io/devcontainers/features/github-cli:1": {}
     },
     "mounts": [
-        "type=bind,source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent"
+        "type=bind,source=${localEnv:HOME}/.ssh/agent.sock,target=/ssh-agent",
+        "type=bind,source=${localEnv:HOME}/.ssh/id_ed25519_sign.pub,target=/opt/signing.pub,readonly",
+        "type=bind,source=${localEnv:HOME}/.codex/auth.json,target=/home/node/.codex/auth.json,readonly"
     ],
     "remoteEnv": {
         "SSH_AUTH_SOCK": "/ssh-agent"
@@ -14,7 +16,6 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "anthropic.claude-code",
                 "christian-kohler.npm-intellisense",
                 "christian-kohler.path-intellisense",
                 "davidanson.vscode-markdownlint",
@@ -27,21 +28,11 @@
                 "github.vscode-github-actions",
                 "jasonnutter.search-node-modules",
                 "mhutchie.git-graph",
+                "openai.chatgpt",
                 "streetsidesoftware.code-spell-checker",
                 "vitest.explorer"
             ],
             "settings": {
-                "cSpell.words": [
-                    "claude",
-                    "davidanson",
-                    "dbaeumer",
-                    "devcontainers",
-                    "eamodio",
-                    "esbenp",
-                    "jasonnutter",
-                    "kohler",
-                    "mhutchie"
-                ],
                 "editor.codeActionsOnSave": {
                     "source.fixAll.eslint": "explicit"
                 },

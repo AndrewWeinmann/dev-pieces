@@ -1,17 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Configure SSH signing
+mkdir -p ~/.ssh && chmod 700 ~/.ssh
+cp /opt/signing.pub ~/.ssh/signing.pub
+chmod 644 ~/.ssh/signing.pub
+
 # Configure git to sign commits with SSH
 git config --global gpg.format ssh
 git config --global commit.gpgsign true
-git config --global --unset user.signingkey || true
-git config --global gpg.ssh.defaultKeyCommand "ssh-add -L"
+git config --global user.signingkey "$(cat ~/.ssh/signing.pub)"
 
-# Install Claude Code CLI (required by the VS Code extension)
+# Install Codex CLI
 if command -v npm >/dev/null 2>&1; then
-  if ! command -v claude >/dev/null 2>&1; then
-    echo "Installing @anthropic-ai/claude-code globally..."
-    npm install -g @anthropic-ai/claude-code || sudo npm install -g @anthropic-ai/claude-code || true
+  if ! command -v codex >/dev/null 2>&1; then
+    echo "Installing @openai/codex globally..."
+    npm install -g @openai/codex || sudo npm install -g @openai/codex || true
   fi
 fi
 
