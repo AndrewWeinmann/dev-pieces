@@ -9,20 +9,6 @@
                 "streetsidesoftware.code-spell-checker"
             ],
             "settings": {
-                "cSpell.words": [
-                    "Anson",
-                    "claude",
-                    "davidanson",
-                    "dbaeumer",
-                    "devcontainers",
-                    "eamodio",
-                    "esbenp",
-                    "gpgsign",
-                    "jasonnutter",
-                    "kohler",
-                    "mhutchie",
-                    "signingkey"
-                ],
                 "editor.formatOnSave": true,
                 "git.inputValidation": true,
                 "git.inputValidationSubjectLength": 50,
