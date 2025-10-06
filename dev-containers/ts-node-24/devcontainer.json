@@ -7,8 +7,7 @@
     },
     "mounts": [
         "type=bind,source=${localEnv:HOME}/.ssh/agent.sock,target=/ssh-agent",
-        "type=bind,source=${localEnv:HOME}/.ssh/id_ed25519_sign.pub,target=/opt/signing.pub,readonly",
-        "type=bind,source=${localEnv:HOME}/.codex/auth.json,target=/home/node/.codex/auth.json,readonly"
+        "type=bind,source=${localEnv:HOME}/.ssh/id_ed25519_sign.pub,target=/opt/signing.pub,readonly"
     ],
     "remoteEnv": {
         "SSH_AUTH_SOCK": "/ssh-agent"
@@ -16,19 +15,9 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "christian-kohler.npm-intellisense",
-                "christian-kohler.path-intellisense",
                 "davidanson.vscode-markdownlint",
                 "dbaeumer.vscode-eslint",
-                "eamodio.gitlens",
                 "esbenp.prettier-vscode",
-                "GitHub.copilot",
-                "GitHub.copilot-chat",
-                "GitHub.vscode-pull-request-github",
-                "github.vscode-github-actions",
-                "jasonnutter.search-node-modules",
-                "mhutchie.git-graph",
-                "openai.chatgpt",
                 "streetsidesoftware.code-spell-checker",
                 "vitest.explorer"
             ],
